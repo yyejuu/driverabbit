@@ -1,0 +1,336 @@
+@charset " utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body {
+  cursor: url(../img/cursor.png),auto;
+}
+
+.wrap {
+  width: 100vw; height: 100vh;
+  position: fixed;
+  background-size: cover;
+}
+.bg {
+  width: 100%; height: 100%;
+  background: #DDFBFF;
+  position: absolute; z-index: -99; 
+  animation: bgChange 45s ease-in-out infinite;
+  display: flex; justify-content: center; align-items: center; overflow: hidden;
+}
+@keyframes bgChange {
+  0%{background-color: #DDFBFF;}
+  20%{background-color: #ffac5e;}
+  30%{background-color: rgb(73, 46, 179)}
+  50%{background-color: #0f0a24;}
+  90%{background-color: #aa9ddd;}
+  100%{background-color: #DDFBFF;}
+}
+.road {
+  background-image: url(../img/road.png);
+  background-repeat: no-repeat;
+  width: 100%; height: 255px;
+  position: absolute; bottom: 0; left: 0;
+}
+.main_cloud {
+  background-image: url(../img/main_cloud.png);
+  background-repeat: no-repeat;
+  width: 324px; height: 283px;
+  position: absolute; left: 798px; bottom: 618px;
+  animation: cloudAuto 45s linear infinite;
+}
+@keyframes cloudAuto {
+  0%{opacity: 100%;}
+  25%{opacity: 0;}
+  50%{opacity: 0;}
+  75%{opacity: 0;}
+  100%{opacity: 100%;}
+}
+.main_moon {
+  background-image: url(../img/main_moon.png);
+  background-repeat: no-repeat;
+  width: 324px; height: 283px;
+  position: absolute; left: 740px; bottom: 640px;
+  animation: cloudAuto2 45s linear infinite;
+}
+@keyframes cloudAuto2 {
+  0%{opacity: 0;}
+  25%{opacity: 0;}
+  50%{opacity: 100%;}
+  75%{opacity: 0;}
+  100%{opacity: 0;}
+}
+.car1 {
+  background-image: url(../img/car1.png);
+  background-repeat: no-repeat;
+  width: 397px; height: 263px;
+  position: absolute; left: 175px; bottom: 2px; z-index: 99;
+  animation: flow linear 10s infinite;
+}
+.car1:hover {
+  animation-play-state: paused;
+  background-image: url(../img/car1_hover.png);
+  width: 397px; height: 330px;
+  position: absolute; left: 175px; bottom: 2px;
+}
+.car2 {
+  background-image: url(../img/car2_auto.png);
+  background-repeat: no-repeat;
+  width: 316px; height: 217px;
+  position: absolute; left: 1604px; bottom: 120px; z-index: 98;
+  animation: flow linear 30s infinite reverse;
+}
+@keyframes flow {
+  0% {left: 0;}
+  100% {left: 100%;}
+}
+.sunguri_plz {
+  background-image: url(../img/plz.png);
+  width: 50px; height: 50px;
+  position: absolute; left: 680px; bottom: 290px; z-index: 1;
+  animation: downAni 2s infinite linear;
+}
+.sunguri {
+  background-image: url(../img/sunguri.png);
+  width: 69px; height: 117px;
+  position: absolute; left: 680px; bottom: 190px; z-index: 1;
+}
+.sunguri:hover {
+  background-image: url(../img/sunguri_hover.png);
+}
+.bus {
+  background-image: url(../img/bus_stop.png);
+  background-repeat: no-repeat;
+  width: 302px; height: 158px;
+  position: absolute; left: 617px; bottom: 200px;
+}
+/* building */
+.building {
+  /* width: 1972px; height: 667px; */
+  position: absolute; left: 0; bottom: 234px;
+  background-repeat: no-repeat;
+}
+.building .b1 {
+  background-image: url(../img/building1.png);
+  width: 200px; height: 664px;
+  position: absolute; left: 0; bottom: 0; 
+}
+.building .b1:hover {
+  background-image: url(../img/building1_hover.png);
+}
+.building .b2 {
+  background-image: url(../img/building2.png);
+  width: 364px; height: 408px;
+  position: absolute; left: 181px; bottom: 0;
+}
+.building .b2:hover {
+  background-image: url(../img/building2_hover.png);
+}
+/* .building .gas {
+  background-image: url(../img/gas.png);
+  width: 405px; height: 192px;
+  position: absolute; left: 904px; bottom: 0;
+} */
+.building .thru_plz {
+  background-image: url(../img/plz.png);
+  background-repeat: no-repeat;
+  width: 50px; height: 50px;
+  position: absolute; left: 1340px; bottom: 230px;
+  animation: downAni .9s infinite linear;
+}
+@keyframes downAni {
+  0% {transform: translateY(-40%);}
+  50% {transform: translateY(0);}
+  100% {transform: translateY(-40%);} 
+}
+.building .thru {
+  width: 372px; height: 230px;
+  background-image: url(../img/thru.png);
+  position: absolute; left: 1177px; bottom: 0px;
+}
+.building .thru img {
+  display: none;
+}
+.building .thru:hover img {
+  display: block;
+}
+.building .thru:hover {
+  background-image: url(../img/thru_hover.png);
+  width: 424px; height: 278px;
+  position: absolute; left: 1152px; bottom: -22px;
+}
+.building .b3 {
+  background-image: url(../img/building3.png);
+  width: 359px; height: 419px;
+  position: absolute; left: 1613px; bottom: 0;
+}
+.building .b3:hover {
+  background-image: url(../img/building3_hover.png);
+}
+/* tree,grass */
+.nature {
+  /* width: 2044px; height: 214px; */
+  position: absolute; left: -41px; bottom: 225px;
+  background-repeat: no-repeat;
+}
+
+.nature .g1 {
+  background-image: url(../img/grass1.png);
+  width: 247px; height: 39px;
+  position: absolute; left: 0; bottom: 0;
+}
+.nature .t1 {
+  background-image: url(../img/tree1.png);
+  width: 80px; height: 204px;
+  position: absolute; left: 211px; bottom: 0;
+}
+.nature .t2 {
+  background-image: url(../img/tree2.png);
+  width: 117px; height: 174px;
+  position: absolute; left: 984px; bottom: 2px;
+}
+.nature .g2 {
+  background-image: url(../img/grass2.png);
+  width: 64px; height: 18px;
+  position: absolute; left: 1009px; bottom: 0;
+}
+.nature .t3 {
+  background-image: url(../img/tree3.png);
+  width: 80px; height: 204px;
+  position: absolute; left: 1678px; bottom: 0;
+}
+.nature .g3 {
+  background-image: url(../img/grass3.png);
+  width: 95px; height: 27px;
+  position: absolute; left: 1710px; bottom: 0;
+}
+.nature .t4 {
+  background-image: url(../img/tree4.png);
+  width: 140px; height: 208px;
+  position: absolute; left: 1903px; bottom: 0;
+}
+
+/* light */
+.light {
+  background-repeat: no-repeat;
+  position: absolute; left: 135px; bottom: 182px; z-index: 11;
+}
+.light .l1 {
+  background-image: url(../img/light.png);
+  width: 37px; height: 164px;
+  position: absolute; left: 0; bottom: 0;
+  animation: lAuto 45s infinite; 
+}
+.light .l2 {
+  background-image: url(../img/light.png);
+  width: 37px; height: 164px;
+  position: absolute; left: 443px; bottom: 0;
+  animation: lAuto 45s infinite;
+}
+.light .l3 {
+  background-image: url(../img/light.png);
+  width: 37px; height: 164px;
+  position: absolute; left: 886px; bottom: 0;
+  animation: lAuto 45s infinite;
+}
+.light .l4 {
+  background-image: url(../img/light.png);
+  width: 37px; height: 164px;
+  position: absolute; left: 1329px; bottom: 0;
+  animation: lAuto 45s infinite;
+}
+.light .l5 {
+  background-image: url(../img/light.png);
+  width: 37px; height: 164px;
+  position: absolute; left: 1772px; bottom: 0;
+  animation: lAuto 45s infinite;
+}
+@keyframes lAuto{
+  0%{background-image: url(../img/light.png);}
+  25%{background-image: url(../img/light.png);}
+  50%{background-image: url(../img/light_auto.png);}
+  75%{background-image: url(../img/light_auto.png);}
+  100%{background-image: url(../img/light.png);}
+}
+/* cloud */
+.cloud {
+/*   width: 1504px; height: 665px; 
+  background-repeat: no-repeat; */
+  position: absolute; left: 148px; bottom: 289px;
+}
+.cloud .c1_plz {
+  background-image: url(../img/plz.png);
+  width: 50px; height: 50px;
+  position: absolute; left: 1380px; bottom: 550px;
+  animation: downAni 2s infinite linear;
+}
+.cloud .c1 {
+  background-image: url(../img/cloud1.png);
+  width: 177px; height: 90px;
+  position: absolute; left: 1327px; bottom: 460px;
+  animation: cloudAni2 3s infinite linear;
+}
+.cloud .c1:hover {
+  background-image: url(../img/cloud1_hover.png);
+  width: 177px; height: 169px; 
+  position: absolute; left: 1327px; bottom: 381px;
+}
+.cloud .c2_plz {
+  background-image: url(../img/plz.png);
+  width: 50px; height: 50px;
+  position: absolute; left: 50px; bottom: 600px;
+  animation: downAni 2s infinite linear;
+}
+.cloud .c2 {
+  background-image: url(../img/cloud2.png);
+  width: 141px; height: 93px;
+  position: absolute; left: 0; bottom: 513px;
+  animation: cloudAni 2s infinite linear;
+}
+.cloud .c2:hover {
+  background-image: url(../img/cloud2_hover.png);
+  width: 141px; height: 157px;
+  position: absolute; left: 0; bottom: 449px;
+}
+.cloud .c3_plz {
+  background-image: url(../img/plz.png);
+  width: 50px; height: 50px;
+  position: absolute; left: 1040px; bottom: 290px;
+  animation: downAni 2s infinite linear;
+}
+.cloud .c3 {
+  background-image: url(../img/cloud3.png);
+  width: 143px; height: 77px;
+  position: absolute; left: 996px; bottom: 220px;
+  animation: cloudAni 3s infinite linear;
+}
+.cloud .c3:hover {
+  background-image: url(../img/cloud3__hover.png);
+  width: 143px; height: 123px;
+  position: absolute; left: 996px; bottom: 174px;
+}
+.cloud .c4_plz {
+  background-image: url(../img/plz.png);
+  width: 50px; height: 50px;
+  position: absolute; left: 590px; bottom: 205px;
+  animation: downAni 2s infinite linear;
+}
+.cloud .c4 {
+  background-image: url(../img/cloud4.png);
+  width: 126px; height: 79px;
+  position: absolute; left: 560px; bottom: 130px;
+  animation: cloudAni2 2.3s infinite linear;
+}
+.cloud .c4:hover {
+  background-image: url(../img/cloud4_hover.png);
+  width: 220px; height: 122px;
+  position: absolute; left: 466px; bottom: 131px;
+}
+@keyframes cloudAni {
+  0%{transform: translateX(20%);}
+  50%{transform: translateX(0);}
+  100%{transform: translateX(20%);}
+}
+@keyframes cloudAni2 {
+  0%{transform: translateX(-40%);}
+  50%{transform: translateX(0);}
+  100%{transform: translateX(-40%);}
+}
