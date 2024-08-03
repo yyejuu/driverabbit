@@ -310,7 +310,7 @@ body {
 .cloud .c4_plz {
   background-image: url(../img/plz.png);
   width: 50px; height: 50px;
-  position: absolute; left: 590px; bottom: 205px;
+  position: absolute; left: 570px; bottom: 205px;
   animation: downAni 2s infinite linear;
 }
 .cloud .c4 {
