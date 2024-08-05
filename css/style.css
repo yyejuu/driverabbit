@@ -9,6 +9,17 @@ body {
   position: fixed;
   background-size: cover;
 }
+.cloud_logo {
+  width: 376px; height: 240px;
+  background-image: url(../img/cloud_logo.png);
+  position: absolute; left: 772px; top: 130px;
+  animation: bounce 0.6s cubic-bezier(0, 0, 0.18, 0.99) infinite alternate;
+}
+@keyframes bounce{
+  to{
+      transform: translateY(-30px);
+  }
+}
 .bg {
   width: 100%; height: 100%;
   background: #DDFBFF;
@@ -76,7 +87,7 @@ body {
   background-repeat: no-repeat;
   width: 316px; height: 217px;
   position: absolute; left: 1604px; bottom: 120px; z-index: 98;
-  animation: flow linear 30s infinite reverse;
+  animation: flow linear 15s infinite reverse;
 }
 @keyframes flow {
   0% {left: 0;}
@@ -111,19 +122,31 @@ body {
 .building .b1 {
   background-image: url(../img/building1.png);
   width: 200px; height: 664px;
-  position: absolute; left: 0; bottom: 0; 
+  position: absolute; left: 0; bottom: 0;
+  animation: b1 45s infinite;
 }
-.building .b1:hover {
-  background-image: url(../img/building1_hover.png);
+@keyframes b1{
+  0%{background-image: url(../img/building1.png);}
+  25%{background-image: url(../img/building1.png);}
+  50%{background-image: url(../img/building1_hover.png);}
+  75%{background-image: url(../img/building1_hover.png);}
+  100%{background-image: url(../img/building1.png);}
 }
+
 .building .b2 {
   background-image: url(../img/building2.png);
   width: 364px; height: 408px;
   position: absolute; left: 181px; bottom: 0;
+  animation: b2 45s infinite;
 }
-.building .b2:hover {
-  background-image: url(../img/building2_hover.png);
+@keyframes b2{
+  0%{background-image: url(../img/building2.png);}
+  25%{background-image: url(../img/building2.png);}
+  50%{background-image: url(../img/building2_hover.png);}
+  75%{background-image: url(../img/building2_hover.png);}
+  100%{background-image: url(../img/building2.png);}
 }
+
 /* .building .gas {
   background-image: url(../img/gas.png);
   width: 405px; height: 192px;
@@ -161,10 +184,16 @@ body {
   background-image: url(../img/building3.png);
   width: 359px; height: 419px;
   position: absolute; left: 1613px; bottom: 0;
+  animation: b3 45s infinite;
 }
-.building .b3:hover {
-  background-image: url(../img/building3_hover.png);
+@keyframes b3{
+  0%{background-image: url(../img/building3.png);}
+  25%{background-image: url(../img/building3.png);}
+  50%{background-image: url(../img/building3_hover.png);}
+  75%{background-image: url(../img/building3_hover.png);}
+  100%{background-image: url(../img/building3.png);}
 }
+
 /* tree,grass */
 .nature {
   /* width: 2044px; height: 214px; */
@@ -293,7 +322,7 @@ body {
 .cloud .c3_plz {
   background-image: url(../img/plz.png);
   width: 50px; height: 50px;
-  position: absolute; left: 1060px; bottom: 290px;
+  position: absolute; left: 1040px; bottom: 290px;
   animation: downAni 2s infinite linear;
 }
 .cloud .c3 {
@@ -310,7 +339,7 @@ body {
 .cloud .c4_plz {
   background-image: url(../img/plz.png);
   width: 50px; height: 50px;
-  position: absolute; left: 570px; bottom: 205px;
+  position: absolute; left: 590px; bottom: 205px;
   animation: downAni 2s infinite linear;
 }
 .cloud .c4 {
