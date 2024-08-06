@@ -4,21 +4,21 @@ body {
   cursor: url(../img/cursor.png),auto;
 }
 
-audio {
+audio#audio1 {
   position: absolute; z-index: 999;
   width: 245px;
   right: 10px; top: 10px;
   opacity: 40%;
 } 
 
-.bgm {
+.wrap .bgm {
   position: absolute; right: 40px; top: 70px;
   display: flex; align-items: center;
 }
-.bgm>i {
+.wrap .bgm>i {
   font-size: 22px; color: #ff5e00;
 }
-.bgm>p {
+.wrap .bgm>p {
   font-size: 12px; font-family: "Racing Sans One", sans-serif; color: #ff5e00;
 }
 .wrap {
