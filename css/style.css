@@ -16,7 +16,7 @@ audio#audio1 {
   display: flex; align-items: center;
 }
 .wrap .bgm>i {
-  font-size: 22px; color: #555;
+  font-size: 22px; color: #555555;
 }
 .wrap .bgm>p {
   font-size: 12px; font-weight: bold; font-family: "Racing Sans One", sans-serif; color: #555;
@@ -98,6 +98,9 @@ audio#audio1 {
   background-image: url(../img/car1_hover.png);
   width: 397px; height: 330px;
   position: absolute; left: 175px; bottom: 2px;
+}
+.car1.car1_audio {
+  animation: none;
 }
 .car2 {
   background-image: url(../img/car2_auto.png);

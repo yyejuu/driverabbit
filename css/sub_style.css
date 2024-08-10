@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+body {
+    background-image: url(/img/sub_bg.png); 
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;
+    position: absolute; bottom: 0; left: 0;
+    overflow: hidden;
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body {
+  cursor: url(../img/cursor.png),auto;
+}
+
+audio#audio1 {
+  position: absolute; z-index: 999;
+  width: 245px;
+  right: 10px; top: 10px;
+  opacity: 40%;
+} 
+
+.wrap .bgm {
+  position: absolute; right: 40px; top: 70px;
+  display: flex; align-items: center;
+}
+.wrap .bgm>i {
+  font-size: 22px; color: #555555;
+}
+.wrap .bgm>p {
+  font-size: 12px; font-weight: bold; font-family: "Racing Sans One", sans-serif; color: #555;
+}
+
+.back a i {
+    font-size: 100px; color: #ffa9b6;
+    position: absolute; left: 10px; top: 30px;
+}
+.back:hover a i {
+    color: #df687a;
+}
+.yekki_plz {
+    background-image: url(/img/plz.png);
+    width: 50px; height: 50px;
+    position: absolute; left: 240px; top: 290px;
+    animation: downAni .9s infinite linear;
+}
+.yekki {
+    background-image: url(/img/sub_yekki.png);
+    width: 489px; height: 851px;
+    position: absolute; bottom: -200px;
+}
+.yekki .mouth {
+    background-image: url(/img/yekki_mouth.png);
+    background-repeat: no-repeat;
+    width: 51px; height: 44px;
+    position: absolute; left: 240px; bottom: 340px;
+}
+
+.yekki_hover {
+    background-image: url(/img/yekki_hover.png);
+    width: 503px; height: 422px;
+    position: absolute; left: 450px; bottom: 700px;
+    display: none;
+}
+.yekki:hover .yekki_hover {
+    display: block;
+}
+
+.plz {
+    background-image: url(/img/plz.png);
+    width: 50px; height: 50px;
+    position: absolute; right: 820px; top: 370px;
+    animation: downAni .9s infinite linear;
+}
+@keyframes downAni {
+    0% {transform: translateY(-40%);}
+    50% {transform: translateY(0);}
+    100% {transform: translateY(-40%);} 
+}
+#pic {
+    position: absolute; left: 805.5px; top: 447.59px; z-index: 100;
+}
+.thru {
+    position: relative;
+}
+.thru .alba {
+    background-image: url(/img/rabbit_alba.png);
+    width: 157px; height: 300px;
+    position: absolute; right: 685px; top: 477px; z-index: 100;
+    display: none;
+}
+.thru .alba .move .l_arm {
+    background-image: url(/img/l_arm.png);
+    width: 80px; height: 50px;
+    position: absolute; left: -42px; bottom: 30px;
+    animation: armAni .7s infinite linear;
+}
+.thru .alba .move .r_arm {
+    background-image: url(/img/r_arm.png);
+    width: 80px; height: 50px;
+    position: absolute; left: 115px; bottom: 30px;
+    animation: armAni .7s infinite linear;
+}
+@keyframes armAni {
+    0% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    100% {transform: rotate(10deg);}
+}
+.thru .alba .move .l_ddam {
+    background-image: url(/img/l_ddam.png);
+    width: 59px; height: 65px;
+    position: absolute; left: -30px; top: 80px;
+    animation: ddamAni .8s infinite;
+}
+.thru .alba .move .r_ddam {
+    background-image: url(/img/r_ddam.png);
+    width: 41px; height: 43px;
+    position: absolute; left: 150px; top: 140px;
+    animation: ddamAni2 1s infinite;
+}
+@keyframes ddamAni {
+    0% {transform: translateX(-20px) translateY(40px); opacity: 0;}
+    25% {opacity: 20;}
+    50% {transform: translateX(0px) translateY(0px); opacity: 0;}
+    75% {opacity: 20;}
+    100% {transform: translateX(-20px) translateY(40px); opacity: 0;}
+}
+@keyframes ddamAni2 {
+    0% {transform: translateX(-10px) translateY(-50px); opacity: 0;}
+    25% {opacity: 20;}
+    50% {transform: translateX(0px) translateY(0px); opacity: 0;}
+    75% {opacity: 20;}
+    100% {transform: translateX(-10px) translateY(-50px); opacity: 0;}
+}
+.thru .alba .bubble {
+    background-image: url(/img/bubble.png);
+    width: 309px; height: 247px;
+    position: absolute; left: -90px; top: -300px; z-index: 10;
+    display: none;
+}
+.thru .alba:hover .bubble {
+    display: block;
+}
+.thru .alba .menu {
+    background-image: url(/img/sub_menu.png);
+    width: 215px; height: 124px;
+    position: absolute; left: 0; bottom: -27px; z-index: 90;
+    display: none;
+}
+.thru .alba .menu:hover {
+    animation: menuAni 1s infinite linear;
+}
+@keyframes menuAni {
+    0%{transform: scaley(1.2);}
+    50%{transform: scaleY(1);}
+    100%{transform: scaley(1.2);}
+}
+.thru .alba .click_bubble {
+    background-image: url(/img/click_bubble.png);
+    width: 261px; height: 241px;
+    position: absolute; left: 230px; bottom: 80px;
+    display: none;
+}
+.grass_plz {
+    background-image: url(/img/plz.png);
+    width: 50px; height: 50px;
+    position: absolute; right: 200px; bottom: 180px;
+    animation: downAni .9s infinite linear;
+}
+.grass {
+    background-image: url(/img/grass_auto.png);
+    width: 321px; height: 155px;
+    position: absolute; right: 60px; bottom: 0;
+    animation: grassAuto 1.3s infinite linear;
+}
+@keyframes grassAuto {
+    0% {background-image: url(/img/grass_auto.png);}
+    25%{background-image: url(/img/grass_auto.png);}
+    50% {background-image: url(/img/grass_auto2.png);}
+    75% {background-image: url(/img/grass_auto2.png);}
+    100%{background-image: url(/img/grass_auto.png);}
+}
+
+.grass:hover {
+    animation: none;
+}
+.grass .hover {
+    background-image: url(/img/grass_hover.png);
+    width: 343px; height: 219px;
+    position: absolute; right: -20px; bottom: -40px; z-index: -1;
+    transition: .6s;
+}
+.grass:hover .hover {
+    transform: translateY(-80px);
+}
