@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    background-image: url(/img/sub_bg.png); 
+    background-image: url(../img/sub_bg.png); 
     background-repeat: no-repeat;
     width: 100%; height: 100%;
     position: absolute; bottom: 0; left: 0;
@@ -38,25 +38,25 @@ audio#audio1 {
     color: #df687a;
 }
 .yekki_plz {
-    background-image: url(/img/plz.png);
+    background-image: url(../img/plz.png);
     width: 50px; height: 50px;
     position: absolute; left: 240px; top: 290px;
     animation: downAni .9s infinite linear;
 }
 .yekki {
-    background-image: url(/img/sub_yekki.png);
+    background-image: url(../img/sub_yekki.png);
     width: 489px; height: 851px;
     position: absolute; bottom: -200px;
 }
 .yekki .mouth {
-    background-image: url(/img/yekki_mouth.png);
+    background-image: url(../img/yekki_mouth.png);
     background-repeat: no-repeat;
     width: 51px; height: 44px;
     position: absolute; left: 240px; bottom: 340px;
 }
 
 .yekki_hover {
-    background-image: url(/img/yekki_hover.png);
+    background-image: url(../img/yekki_hover.png);
     width: 503px; height: 422px;
     position: absolute; left: 450px; bottom: 700px;
     display: none;
@@ -66,7 +66,7 @@ audio#audio1 {
 }
 
 .plz {
-    background-image: url(/img/plz.png);
+    background-image: url(../img/plz.png);
     width: 50px; height: 50px;
     position: absolute; right: 820px; top: 370px;
     animation: downAni .9s infinite linear;
@@ -83,19 +83,19 @@ audio#audio1 {
     position: relative;
 }
 .thru .alba {
-    background-image: url(/img/rabbit_alba.png);
+    background-image: url(../img/rabbit_alba.png);
     width: 157px; height: 300px;
     position: absolute; right: 685px; top: 477px; z-index: 100;
     display: none;
 }
 .thru .alba .move .l_arm {
-    background-image: url(/img/l_arm.png);
+    background-image: url(../img/l_arm.png);
     width: 80px; height: 50px;
     position: absolute; left: -42px; bottom: 30px;
     animation: armAni .7s infinite linear;
 }
 .thru .alba .move .r_arm {
-    background-image: url(/img/r_arm.png);
+    background-image: url(../img/r_arm.png);
     width: 80px; height: 50px;
     position: absolute; left: 115px; bottom: 30px;
     animation: armAni .7s infinite linear;
@@ -106,13 +106,13 @@ audio#audio1 {
     100% {transform: rotate(10deg);}
 }
 .thru .alba .move .l_ddam {
-    background-image: url(/img/l_ddam.png);
+    background-image: url(../img/l_ddam.png);
     width: 59px; height: 65px;
     position: absolute; left: -30px; top: 80px;
     animation: ddamAni .8s infinite;
 }
 .thru .alba .move .r_ddam {
-    background-image: url(/img/r_ddam.png);
+    background-image: url(../img/r_ddam.png);
     width: 41px; height: 43px;
     position: absolute; left: 150px; top: 140px;
     animation: ddamAni2 1s infinite;
@@ -132,7 +132,7 @@ audio#audio1 {
     100% {transform: translateX(-10px) translateY(-50px); opacity: 0;}
 }
 .thru .alba .bubble {
-    background-image: url(/img/bubble.png);
+    background-image: url(../img/bubble.png);
     width: 309px; height: 247px;
     position: absolute; left: -90px; top: -300px; z-index: 10;
     display: none;
@@ -141,7 +141,7 @@ audio#audio1 {
     display: block;
 }
 .thru .alba .menu {
-    background-image: url(/img/sub_menu.png);
+    background-image: url(../img/sub_menu.png);
     width: 215px; height: 124px;
     position: absolute; left: 0; bottom: -27px; z-index: 90;
     display: none;
@@ -155,36 +155,36 @@ audio#audio1 {
     100%{transform: scaley(1.2);}
 }
 .thru .alba .click_bubble {
-    background-image: url(/img/click_bubble.png);
+    background-image: url(../img/click_bubble.png);
     width: 261px; height: 241px;
     position: absolute; left: 230px; bottom: 80px;
     display: none;
 }
 .grass_plz {
-    background-image: url(/img/plz.png);
+    background-image: url(../img/plz.png);
     width: 50px; height: 50px;
     position: absolute; right: 200px; bottom: 180px;
     animation: downAni .9s infinite linear;
 }
 .grass {
-    background-image: url(/img/grass_auto.png);
+    background-image: url(../img/grass_auto.png);
     width: 321px; height: 155px;
     position: absolute; right: 60px; bottom: 0;
     animation: grassAuto 1.3s infinite linear;
 }
 @keyframes grassAuto {
-    0% {background-image: url(/img/grass_auto.png);}
-    25%{background-image: url(/img/grass_auto.png);}
-    50% {background-image: url(/img/grass_auto2.png);}
-    75% {background-image: url(/img/grass_auto2.png);}
-    100%{background-image: url(/img/grass_auto.png);}
+    0% {background-image: url(../img/grass_auto.png);}
+    25%{background-image: url(../img/grass_auto.png);}
+    50% {background-image: url(../img/grass_auto2.png);}
+    75% {background-image: url(../img/grass_auto2.png);}
+    100%{background-image: url(../img/grass_auto.png);}
 }
 
 .grass:hover {
     animation: none;
 }
 .grass .hover {
-    background-image: url(/img/grass_hover.png);
+    background-image: url(../img/grass_hover.png);
     width: 343px; height: 219px;
     position: absolute; right: -20px; bottom: -40px; z-index: -1;
     transition: .6s;
