@@ -1,7 +1,7 @@
 $(function () {
 	
 $('#pic').click(function(){
-    $(this).attr('src','/img/sub_bar_hover.png')
+    $(this).attr('src','../img/sub_bar_hover.png')
     $('.thru .alba').css('display', 'block')
 })
 
