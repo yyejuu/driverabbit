@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body {
+  cursor: url(../img/cursor.png),auto;
+}
+
+body {
+    width: 100%; height: 100vh;
+}
+.bg {
+    background-image: url(/img/loading_Bg.png);
+    background-repeat: no-repeat;
+    width: 100%; height: 100%;
+    position: absolute; left: 0; top: 0;
+    animation: bgAni 7s linear;
+}
+@keyframes bgAni {
+    0%{opacity: 0;}
+    50%{opacity: 50%;}
+    100%{opacity: 100%;}
+}
+.typing {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 6rem;
+    position: absolute; left: 43%; top: 40%;
+  }
+  
+  .text {
+    font-size: 2.2rem;
+    margin-left: .6rem;
+    color: pink;
+    font-family: "Racing Sans One", sans-serif;
+    text-align: center;
+  }
+  
+  .text::after {
+    content: '';
+    margin-left: .4rem;
+    border-right: 2px solid #777;
+    animation: cursor .9s infinite steps(2);
+  }
+  
+  @keyframes cursor {
+    from { border-right: 2px solid hotpink; }
+    to { border-right: 2px solid pink; }
+  }
